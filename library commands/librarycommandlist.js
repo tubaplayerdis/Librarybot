@@ -14,7 +14,7 @@ module.exports = {
             {name: 'Notes', value: 'on tenthvid relpacle 1 with capital I'}
         )
         .setImage('https://media.timeout.com/images/105628370/image.jpg')
-        .setFooter('librarycommandlist for Tubabot')
+        .setFooter('librarycommandlist for Librarybot')
         message.channel.send(newEmbed);
     }
 
