@@ -43,9 +43,11 @@ client.on('message', message =>{
 
     if (command === 'ping'){
         message.channel.send('pong!')
-     } else if (command === 'help'){
+        } else if (command === 'info'){
+        client.commands.get('librarycommandlist').execute(message, args, Discord)
+        }  else if (command === 'help'){
         client.commands.get('help').execute(message, args, Discord)
-     } else if (message.content.startsWith('&wierd1')){
+        } else if (message.content.startsWith('&wierd1')){
             message.channel.send ('https://cdn.discordapp.com/attachments/629752300302237722/740366665962881024/video0.mp4')
         } else if (message.content.startsWith('&shutup')){
             message.channel.send ('https://cdn.discordapp.com/attachments/703855942055493652/739284997201985648/video0-36.mp4')
